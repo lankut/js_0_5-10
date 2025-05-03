@@ -54,7 +54,7 @@ switch (randomNumber2) {
     break;
 }
 
-if (dice1 === dice2) {
+if (dice1 === dice2 && dice1 > 3) {
   isWinningDouble = true;
 }
 
