@@ -6,12 +6,58 @@
 
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
+let randomNumber1 = Math.floor(Math.random() * 6);
+let randomNumber2 = Math.floor(Math.random() * 6);
+let isWinningDouble = false;// your code
 
-let dice1 // your code
-let dice2 // your code
-let isWinningDouble // your code
+let dice1;// your code
+switch (randomNumber1) {
+  case 0:
+    dice1 = 1
+    break;
+  case 1:
+    dice1 = 2
+    break;
+  case 2:
+    dice1 = 3
+    break;
+  case 3:
+    dice1 = 4
+    break;
+  case 4:
+    dice1 = 5
+    break;
+  case 5:
+    dice1 = 6
+    break;
+}
 
-/*
+let dice2;// your code
+switch (randomNumber2) {
+  case 0:
+    dice2 = 1
+    break;
+  case 1:
+    dice2 = 2
+    break;
+  case 2:
+    dice2 = 3
+    break;
+  case 3:
+    dice2 = 4
+    break;
+  case 4:
+    dice2 = 5
+    break;
+  case 5:
+    dice2 = 6
+    break;
+}
+
+if (dice1 === dice2) {
+  isWinningDouble = true;
+}
+
 console.log('Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice2)
 if (isWinningDouble) {
@@ -19,4 +65,4 @@ if (isWinningDouble) {
 } else {
   console.log('Не выигрышный дубль.')
 }
-*/
+
