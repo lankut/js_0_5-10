@@ -1,9 +1,12 @@
 // Разработайте функцию findLargest, которая принимает три числа и возвращает наибольшее из них.
 
 function findLargest(a, b, c,) {
-    if (a === b && b === c) { return a }
+    let max = 0;
+    if (a === b && b === c) {
+        max = a
+        return max
+    }
     else {
-        let max = 0;
         if (a > b) {
             max = a
             if (max > c) {
