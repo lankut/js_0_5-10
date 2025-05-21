@@ -12,4 +12,6 @@
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
 
-function doubleEachCharacter() {}
+function doubleEachCharacter(str) {
+    return str.replace(/[a-z]/g, (el) => el + el)
+}
