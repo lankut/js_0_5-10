@@ -13,5 +13,12 @@
 */
 
 function doubleEachCharacter(str) {
-    return str.replace(/[a-z]/g, (el) => el + el)
+    let str_2 = []
+    
+    for (let i = 0; i <str.length; i++) {
+        str_2.push(str[i])
+        str_2.push(str[i])
+    }
+
+    return str_2.join('')
 }
